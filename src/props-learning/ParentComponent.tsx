@@ -5,7 +5,6 @@ import ChildComponent from './ChildComponent'
 const ParentComponent = () => {
   return (
     <View>
-      <Text>This is ParentComponent</Text>
       <ChildComponent name="Cyber" age={22} hobbies={["Cooking", "Coding"]} />
     </View>
   )
