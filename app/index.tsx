@@ -1,5 +1,7 @@
 import AndOperator from "@/src/conditional-rendering/AndOperator";
 import ConditionalRendering from "@/src/conditional-rendering/ConditionalRendering";
+import FetchData from "@/src/effect/FetchData";
+import MyEffect from "@/src/effect/MyEffect";
 import MyFlatList from "@/src/flatlist/MyFlatList";
 import ParentComponent from "@/src/props-learning/ParentComponent";
 import BasicCounter from "@/src/state-hooks/state/basic-counter/BasicCounter";
@@ -24,6 +26,11 @@ export default function Page() {
           <BasicCounter />
           <Text style={st.text2}>4.2 Update List</Text>
           <UpdateArray />
+          <Text style={st.text1}>5. Use Effect</Text>
+          <Text style={st.text2}>5.1 My Effect</Text>
+          <MyEffect />
+          <Text style={st.text2}>5.2 Fetch Data</Text>
+          <FetchData />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
