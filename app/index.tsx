@@ -1,5 +1,6 @@
 import AndOperator from "@/src/conditional-rendering/AndOperator";
 import ConditionalRendering from "@/src/conditional-rendering/ConditionalRendering";
+import ComponentA from "@/src/data-drilling/use-context/ComponentA";
 import FetchData from "@/src/effect/FetchData";
 import MyEffect from "@/src/effect/MyEffect";
 import MyFlatList from "@/src/flatlist/MyFlatList";
@@ -34,6 +35,9 @@ export default function Page() {
           <FetchData />
           <Text style={st.text1}>6. Use Reducer</Text>
           <MyReducer />
+          <Text style={st.text1}>7. Data Drilling</Text>
+          <Text style={st.text2}>7.1 Use Context</Text>
+          <ComponentA />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
